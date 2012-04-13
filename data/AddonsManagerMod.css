@@ -1,0 +1,18 @@
+radio#collections-view-item,
+richlistitem#collections-view-item {
+  list-style-image: url("icon32.png");
+  -moz-image-region: rect(0px, 32px,  32px, 0px);
+}
+
+radio#collections-view-item:hover, radio#collections-view-item[selected="true"]  {
+  -moz-image-region: rect(0px, 32px,  32px, 0px);
+}
+
+radio[noimage="true"]#collections-view-item {
+  list-style-image: none;
+  -moz-image-region: rect(0 0 0 0);
+}
+
+#collections-browser {
+  padding: 10px 10px 0 10px;
+}

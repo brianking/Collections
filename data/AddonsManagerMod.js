@@ -1,3 +1,7 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 CollectionsController = {};
 
 CollectionsController.COLLECTIONS_URL = "https://addons.mozilla.org/collections/";
@@ -19,7 +23,7 @@ CollectionsController.loadButton = function()
     var collsButton = document.createElement("button");
     collsButton.setAttribute("id", "collections-button");
     collsButton.setAttribute("class", "category header-button");
-    collsButton.setAttribute("label", "Collections");
+    //collsButton.setAttribute("label", "Collections");
     collsButton.setAttribute("name", "Collections");
     collsButton.addEventListener("click", function() {
         openURL(CollectionsController.COLLECTIONS_URL);
@@ -60,6 +64,11 @@ CollectionsController.cleanUp = function()
     var collsButton = document.getElementById("collections-button");
     var retBox = document.getElementById("retirement-box");
 
-    cats.removeChild(collsButton);
-    cats.removeChild(retBox);
+    try {
+        cats.removeChild(collsButton);
+        cats.removeChild(retBox);
+    }
+    catch(e) {
+        
+    }
 }

@@ -4,7 +4,8 @@
     "author": "Mozilla", 
     "version": "0.1", 
     "fullName": "Add-on Collections", 
-    "icon": "data/icon32.png", 
+    "icon": "data/icon48.png",
+    "icon64": "data/icon64.png", 
     "id": "jid1-6B0GB4s60nkj4Q", 
     "description": "A handy Collections panel in the Add-ons Manager"
 }

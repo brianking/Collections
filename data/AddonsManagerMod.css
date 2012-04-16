@@ -1,18 +1,37 @@
-radio#collections-view-item,
-richlistitem#collections-view-item {
+radio#collections-button,
+#collections-button {
   list-style-image: url("icon32.png");
   -moz-image-region: rect(0px, 32px,  32px, 0px);
 }
 
-radio#collections-view-item:hover, radio#collections-view-item[selected="true"]  {
+radio#collections-button:hover, radio#collections-button[selected="true"]  {
   -moz-image-region: rect(0px, 32px,  32px, 0px);
 }
 
-radio[noimage="true"]#collections-view-item {
+radio[noimage="true"]#collections-button {
   list-style-image: none;
   -moz-image-region: rect(0 0 0 0);
 }
 
-#collections-browser {
-  padding: 10px 10px 0 10px;
+#collections-button,
+#retirement-box {
+  margin-right: 20px !important;
+}
+
+#collections-button {
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#retirement-box {
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+#retirement-text {
+  font-weight: bold;
+}
+
+#retirement-button {
+  text-align: left;
 }

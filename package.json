@@ -1,11 +1,15 @@
 {
-    "name": "collections", 
-    "license": "MPL 2.0", 
-    "author": "Mozilla", 
-    "version": "0.2", 
-    "fullName": "Add-on Collections", 
+    "name": "collector",
+    "license": "MPL 2.0",
+    "author": "Mozilla Corporation",
+    "contributors": [
+        "Brian King - Briks Software"
+    ],
+    "version": "3.0", 
+    "fullName": "Add-on Collector", 
     "icon": "data/icon48.png",
     "icon64": "data/icon64.png", 
-    "id": "jid1-6B0GB4s60nkj4Q", 
-    "description": "The Add-on Collector is being retired. Find out why, and discover Collections on the site instead."
+    "id": "sharing@addons.mozilla.org", 
+    "description": "The Add-on Collector is being retired. Find out why, and discover Collections on the site instead.",
+    "homepage": ""
 }

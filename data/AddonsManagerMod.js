@@ -12,10 +12,6 @@ self.port.on("collector_init", function(data) {
     CollectionsController.loadRetirement();
 });
 
-self.port.on("collector_disable", function(data) {
-    CollectionsController.cleanUp();
-});
-
 CollectionsController.loadButton = function()
 {
     // XX TODO Localise strings
@@ -56,19 +52,4 @@ CollectionsController.loadRetirement = function()
     retBox.appendChild(retText);
     retBox.appendChild(retButton);
     cats.appendChild(retBox);
-}
-
-CollectionsController.cleanUp = function()
-{
-    var cats = document.getElementById("categories");
-    var collsButton = document.getElementById("collections-button");
-    var retBox = document.getElementById("retirement-box");
-
-    try {
-        cats.removeChild(collsButton);
-        cats.removeChild(retBox);
-    }
-    catch(e) {
-        
-    }
 }
